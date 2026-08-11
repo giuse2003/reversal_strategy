@@ -23,8 +23,8 @@ export default {
           const condizioniTesto = 
             "📈 <b>CONDIZIONI DELLA REVERSAL STRATEGY</b> 📈\n\n" +
             "La strategia cerca opportunità di acquisto (Long) quando:\n\n" +
-            "1️⃣ <b>RSI 15 min:</b> <= 30 (Ipervenduto nel breve termine)\n" +
-            "2️⃣ <b>RSI 1 ora:</b> <= 35 (Debolezza nel medio termine)\n" +
+            "1️⃣ <b>RSI 15 min:</b> inferiore o uguale a 30 (Ipervenduto nel breve termine)\n" +
+            "2️⃣ <b>RSI 1 ora:</b> inferiore o uguale a 35 (Debolezza nel medio termine)\n" +
             "3️⃣ <b>Distanza SMA 100:</b> Il prezzo deve essere distante dalla SMA 100 giornaliera per almeno 1.5 volte la SMA 10 dell'ATR 14 giornaliero.";
           await this.sendMessage(chatId, condizioniTesto, env);
           
@@ -115,7 +115,7 @@ export default {
     const token = env.TELEGRAM_BOT_TOKEN;
     const url = `https://api.telegram.org/bot${token}/sendMessage`;
 
-    await fetch(url, {
+    const response = await fetch(url, {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
@@ -126,5 +126,9 @@ export default {
         parse_mode: "HTML"
       })
     });
+    
+    if (!response.ok) {
+      console.error("Errore da Telegram API:", await response.text());
+    }
   }
 };
