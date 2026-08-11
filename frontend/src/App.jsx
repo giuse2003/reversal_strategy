@@ -78,26 +78,32 @@ function App() {
               </div>
 
               <div className="indicator-row">
-                <span className="indicator-label">RSI 15'</span>
+                <span className="indicator-label">
+                  <span style={{marginRight: '6px'}}>{item.condition_1_met ? '✅' : '❌'}</span>
+                  RSI 15'
+                </span>
                 <span className={`indicator-value ${item.condition_1_met ? 'value-pass' : 'value-fail'}`}>
-                  <span style={{marginRight: '8px'}}>{item.rsi_15m}</span>
-                  {item.condition_1_met ? '✅' : '❌'}
+                  {item.rsi_15m}
                 </span>
               </div>
 
               <div className="indicator-row">
-                <span className="indicator-label">RSI 1H</span>
+                <span className="indicator-label">
+                  <span style={{marginRight: '6px'}}>{item.condition_2_met ? '✅' : '❌'}</span>
+                  RSI 1H
+                </span>
                 <span className={`indicator-value ${item.condition_2_met ? 'value-pass' : 'value-fail'}`}>
-                  <span style={{marginRight: '8px'}}>{item.rsi_1h}</span>
-                  {item.condition_2_met ? '✅' : '❌'}
+                  {item.rsi_1h}
                 </span>
               </div>
 
               <div className="indicator-row">
-                <span className="indicator-label">Distanza SMA100</span>
+                <span className="indicator-label">
+                  <span style={{marginRight: '6px'}}>{item.condition_3_met ? '✅' : '❌'}</span>
+                  Distanza SMA100
+                </span>
                 <span className={`indicator-value ${item.condition_3_met ? 'value-pass' : 'value-fail'}`}>
-                  <span style={{marginRight: '8px'}}>{item.distance > 0 ? '+' : ''}{item.distance}</span>
-                  {item.condition_3_met ? '✅' : '❌'}
+                  {item.distance > 0 ? '+' : ''}{item.distance}
                 </span>
               </div>
               
