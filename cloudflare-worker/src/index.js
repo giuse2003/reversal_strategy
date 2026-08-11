@@ -100,8 +100,9 @@ export default {
       // Aggiunge la data di ultimo aggiornamento
       if (json.timestamp) {
         const dataAgg = new Date(json.timestamp);
-        msg += `<i>Ultimo aggiornamento: ${dataAgg.toLocaleString('it-IT', { timeZone: 'Europe/Rome' })}</i>`;
+        msg += `<i>Ultimo aggiornamento: ${dataAgg.toLocaleString('it-IT', { timeZone: 'Europe/Rome' })}</i>\n\n`;
       }
+      msg += `🔗 <a href="https://giuse2003.github.io/reversal_strategy/">Apri la Dashboard</a>`;
       
       await this.sendMessage(chatId, msg, env);
       

@@ -112,7 +112,8 @@ def main():
                     f"RSI 15': {res['rsi_15m']} (<= 30)\n"
                     f"RSI 1H: {res['rsi_1h']} (<= 35)\n"
                     f"Distanza SMA100: {res['distance']} >= {res['threshold']}\n\n"
-                    f"Tutte le condizioni della Reversal Strategy sono soddisfatte!"
+                    f"Tutte le condizioni della Reversal Strategy sono soddisfatte!\n\n"
+                    f"🔗 <a href='https://giuse2003.github.io/reversal_strategy/'>Apri la Dashboard</a>"
                 )
                 messages.append(msg)
                 
