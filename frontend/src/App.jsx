@@ -80,21 +80,24 @@ function App() {
               <div className="indicator-row">
                 <span className="indicator-label">RSI 15'</span>
                 <span className={`indicator-value ${item.condition_1_met ? 'value-pass' : 'value-fail'}`}>
-                  {item.rsi_15m} {item.condition_1_met && '✓'}
+                  <span style={{marginRight: '8px'}}>{item.rsi_15m}</span>
+                  {item.condition_1_met ? '✅' : '❌'}
                 </span>
               </div>
 
               <div className="indicator-row">
                 <span className="indicator-label">RSI 1H</span>
                 <span className={`indicator-value ${item.condition_2_met ? 'value-pass' : 'value-fail'}`}>
-                  {item.rsi_1h} {item.condition_2_met && '✓'}
+                  <span style={{marginRight: '8px'}}>{item.rsi_1h}</span>
+                  {item.condition_2_met ? '✅' : '❌'}
                 </span>
               </div>
 
               <div className="indicator-row">
                 <span className="indicator-label">Distanza SMA100</span>
                 <span className={`indicator-value ${item.condition_3_met ? 'value-pass' : 'value-fail'}`}>
-                  {item.distance > 0 ? '+' : ''}{item.distance} {item.condition_3_met && '✓'}
+                  <span style={{marginRight: '8px'}}>{item.distance > 0 ? '+' : ''}{item.distance}</span>
+                  {item.condition_3_met ? '✅' : '❌'}
                 </span>
               </div>
               
