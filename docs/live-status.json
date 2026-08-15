@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "timestamp": "2026-08-15T03:55:27.931724+00:00",
+  "timestamp": "2026-08-15T04:36:23.941633+00:00",
   "data": [
     {
       "symbol": "EUR-USD",
@@ -38,9 +38,9 @@
       "rsi_15m": 53.09,
       "rsi_1h": 63.15,
       "sma_100": 0.70568,
-      "sma_atr_10": 0.00504,
+      "sma_atr_10": 0.00503,
       "distance": -0.00298,
-      "threshold": 0.00756,
+      "threshold": 0.00754,
       "condition_1_met": false,
       "condition_2_met": false,
       "condition_3_met": false,
@@ -50,12 +50,12 @@
     {
       "symbol": "USD-CAD",
       "price": 1.3872,
-      "rsi_15m": 42.59,
-      "rsi_1h": 31.41,
-      "sma_100": 1.3919,
-      "sma_atr_10": 0.00603,
-      "distance": 0.0047,
-      "threshold": 0.00904,
+      "rsi_15m": 42.65,
+      "rsi_1h": 31.39,
+      "sma_100": 1.39187,
+      "sma_atr_10": 0.00601,
+      "distance": 0.00467,
+      "threshold": 0.00902,
       "condition_1_met": false,
       "condition_2_met": true,
       "condition_3_met": false,
