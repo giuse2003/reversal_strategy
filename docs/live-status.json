@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "timestamp": "2026-08-16T15:31:00.023466+00:00",
+  "timestamp": "2026-08-16T15:53:17.431032+00:00",
   "data": [
     {
       "symbol": "EUR-USD",
@@ -43,21 +43,6 @@
       "threshold": 0.00745,
       "condition_1_met": false,
       "condition_2_met": false,
-      "condition_3_met": false,
-      "is_buy": false,
-      "last_buy_time": null
-    },
-    {
-      "symbol": "USD-CAD",
-      "price": 1.3872,
-      "rsi_15m": 42.59,
-      "rsi_1h": 31.41,
-      "sma_100": 1.3919,
-      "sma_atr_10": 0.00603,
-      "distance": 0.0047,
-      "threshold": 0.00904,
-      "condition_1_met": false,
-      "condition_2_met": true,
       "condition_3_met": false,
       "is_buy": false,
       "last_buy_time": null
