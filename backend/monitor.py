@@ -86,7 +86,20 @@ async def notify_subscribers(messages):
             except Exception as e:
                 logger.error(f"Impossibile inviare messaggio a {chat_id}: {e}")
 
+def keep_supabase_alive():
+    supa_url = os.getenv("SUPABASE_URL")
+    supa_key = os.getenv("SUPABASE_SERVICE_ROLE_KEY")
+    if supa_url and supa_key:
+        try:
+            supabase: Client = create_client(supa_url, supa_key)
+            # Query leggerissima per evitare la sospensione per inattività (mantiene il DB attivo)
+            supabase.table("telegram_subscribers_reversal").select("telegram_chat_id", count="exact").limit(1).execute()
+        except Exception as e:
+            logger.error(f"Errore keep-alive Supabase: {e}")
+
 def main():
+    keep_supabase_alive()
+    
     analyzer = MarketAnalyzer()
     results = analyzer.analyze_all()
     
