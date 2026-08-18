@@ -21,11 +21,14 @@ def load_previous_state():
         try:
             with open(STATUS_FILE, 'r') as f:
                 data = json.load(f)
-                # mappa simboli al timestamp in cui hanno dato l'ultimo is_buy
                 state = {}
                 for item in data.get('data', []):
+                    entry = {}
                     if item.get('is_buy') and item.get('last_buy_time'):
-                        state[item['symbol']] = datetime.fromisoformat(item['last_buy_time'])
+                        entry['buy'] = datetime.fromisoformat(item['last_buy_time'])
+                    if item.get('is_near_buy') and item.get('last_near_buy_time'):
+                        entry['near'] = datetime.fromisoformat(item['last_near_buy_time'])
+                    state[item['symbol']] = entry
                 return state
         except Exception as e:
             logger.error(f"Errore lettura stato precedente: {e}")
@@ -37,15 +40,25 @@ def save_current_state(results, previous_state, now):
     # Aggiorna i risultati con il timestamp del buy se necessario
     for res in results:
         symbol = res['symbol']
+        prev = previous_state.get(symbol, {})
+        
         if res['is_buy']:
-            # Se era già buy di recente, mantieni il timestamp vecchio, altrimenti metti ora
-            prev_time = previous_state.get(symbol)
+            prev_time = prev.get('buy')
             if prev_time and (now - prev_time).total_seconds() < 900:
                 res['last_buy_time'] = prev_time.isoformat()
             else:
                 res['last_buy_time'] = now.isoformat()
         else:
             res['last_buy_time'] = None
+            
+        if res.get('is_near_buy'):
+            prev_near = prev.get('near')
+            if prev_near and (now - prev_near).total_seconds() < 900:
+                res['last_near_buy_time'] = prev_near.isoformat()
+            else:
+                res['last_near_buy_time'] = now.isoformat()
+        else:
+            res['last_near_buy_time'] = None
 
     output = {
         "status": "ok",
@@ -115,8 +128,10 @@ def main():
     messages = []
     for res in updated_results:
         symbol = res['symbol']
+        prev = previous_state.get(symbol, {})
+        
         if res['is_buy']:
-            prev_time = previous_state.get(symbol)
+            prev_time = prev.get('buy')
             # Se è un nuovo segnale di buy (non c'era o è passato più di 15m)
             if not prev_time or (now - prev_time).total_seconds() > 900:
                 msg = (
@@ -126,6 +141,20 @@ def main():
                     f"RSI 1H: {res['rsi_1h']} (<= 35)\n"
                     f"Distanza SMA100: {res['distance']} >= {res['threshold']}\n\n"
                     f"Tutte le condizioni della Reversal Strategy sono soddisfatte!\n\n"
+                    f"🔗 <a href='https://giuse2003.github.io/reversal_strategy/'>Apri la Dashboard</a>"
+                )
+                messages.append(msg)
+                
+        elif res.get('is_near_buy'):
+            prev_near = prev.get('near')
+            if not prev_near or (now - prev_near).total_seconds() > 900:
+                msg = (
+                    f"⚠️ <b>PRE-ALLARME 90%: {symbol}</b> ⚠️\n\n"
+                    f"Prezzo: {res['price']}\n"
+                    f"RSI 15': {res['rsi_15m']} (Target <= {res['near_threshold_1']})\n"
+                    f"RSI 1H: {res['rsi_1h']} (Target <= {res['near_threshold_2']})\n"
+                    f"Distanza SMA100: {res['distance']} >= {res['near_threshold_3']}\n\n"
+                    f"Tutte le condizioni sono al 90% dell'allineamento!\n\n"
                     f"🔗 <a href='https://giuse2003.github.io/reversal_strategy/'>Apri la Dashboard</a>"
                 )
                 messages.append(msg)

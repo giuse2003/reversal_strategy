@@ -73,6 +73,17 @@ class MarketAnalyzer:
             
             is_buy = condition_1 and condition_2 and condition_3
             
+            # Condizioni al 90% (Pre-Allarme)
+            near_threshold_1 = 30.0 / 0.9
+            near_threshold_2 = 35.0 / 0.9
+            near_threshold_3 = threshold * 0.9
+            
+            near_cond_1 = rsi_15m <= near_threshold_1
+            near_cond_2 = rsi_1h <= near_threshold_2
+            near_cond_3 = distance >= near_threshold_3
+            
+            is_near_buy = near_cond_1 and near_cond_2 and near_cond_3
+            
             return {
                 "symbol": REVERSE_SYMBOLS[ticker],
                 "price": round(current_price, 5),
@@ -82,10 +93,14 @@ class MarketAnalyzer:
                 "sma_atr_10": round(sma_atr_10, 5) if not pd.isna(sma_atr_10) else None,
                 "distance": round(distance, 5),
                 "threshold": round(threshold, 5) if not pd.isna(threshold) else None,
+                "near_threshold_1": round(near_threshold_1, 2) if not pd.isna(near_threshold_1) else None,
+                "near_threshold_2": round(near_threshold_2, 2) if not pd.isna(near_threshold_2) else None,
+                "near_threshold_3": round(near_threshold_3, 5) if not pd.isna(near_threshold_3) else None,
                 "condition_1_met": bool(condition_1),
                 "condition_2_met": bool(condition_2),
                 "condition_3_met": bool(condition_3),
-                "is_buy": bool(is_buy)
+                "is_buy": bool(is_buy),
+                "is_near_buy": bool(is_near_buy)
             }
         except Exception as e:
             logger.error(f"Errore nel calcolo degli indicatori per {ticker}: {e}")
