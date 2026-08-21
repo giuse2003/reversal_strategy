@@ -1,11 +1,11 @@
 {
   "status": "ok",
-  "timestamp": "2026-08-21T05:57:41.366408+00:00",
+  "timestamp": "2026-08-21T06:59:48.489633+00:00",
   "data": [
     {
       "symbol": "EUR-USD",
       "price": 1.17014,
-      "rsi_15m": 64.53,
+      "rsi_15m": 61.3,
       "rsi_1h": 64.25,
       "sma_100": 1.15727,
       "sma_atr_10": 0.00539,
@@ -24,12 +24,12 @@
     },
     {
       "symbol": "GBP-USD",
-      "price": 1.36521,
-      "rsi_15m": 65.08,
-      "rsi_1h": 65.77,
+      "price": 1.36498,
+      "rsi_15m": 58.43,
+      "rsi_1h": 63.41,
       "sma_100": 1.34278,
       "sma_atr_10": 0.00728,
-      "distance": -0.02243,
+      "distance": -0.0222,
       "threshold": 0.01092,
       "near_threshold_1": 33.33,
       "near_threshold_2": 38.89,
@@ -44,16 +44,16 @@
     },
     {
       "symbol": "AUD-USD",
-      "price": 0.71469,
-      "rsi_15m": 73.31,
-      "rsi_1h": 71.91,
+      "price": 0.7148,
+      "rsi_15m": 71.93,
+      "rsi_1h": 72.44,
       "sma_100": 0.70676,
       "sma_atr_10": 0.00481,
-      "distance": -0.00794,
-      "threshold": 0.00721,
+      "distance": -0.00804,
+      "threshold": 0.00722,
       "near_threshold_1": 33.33,
       "near_threshold_2": 38.89,
-      "near_threshold_3": 0.00649,
+      "near_threshold_3": 0.0065,
       "condition_1_met": false,
       "condition_2_met": false,
       "condition_3_met": false,
@@ -64,12 +64,12 @@
     },
     {
       "symbol": "USD-CAD",
-      "price": 1.3758,
-      "rsi_15m": 32.52,
-      "rsi_1h": 30.79,
+      "price": 1.37603,
+      "rsi_15m": 38.52,
+      "rsi_1h": 31.56,
       "sma_100": 1.39161,
       "sma_atr_10": 0.0062,
-      "distance": 0.01581,
+      "distance": 0.01558,
       "threshold": 0.0093,
       "near_threshold_1": 33.33,
       "near_threshold_2": 38.89,
@@ -78,9 +78,9 @@
       "condition_2_met": true,
       "condition_3_met": true,
       "is_buy": false,
-      "is_near_buy": true,
+      "is_near_buy": false,
       "last_buy_time": null,
-      "last_near_buy_time": "2026-08-21T05:57:41.366408+00:00"
+      "last_near_buy_time": null
     }
   ]
 }
