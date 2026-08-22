@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "timestamp": "2026-08-22T02:41:00.254225+00:00",
+  "timestamp": "2026-08-22T03:26:32.954330+00:00",
   "data": [
     {
       "symbol": "EUR-USD",
@@ -34,26 +34,6 @@
       "near_threshold_1": 33.33,
       "near_threshold_2": 38.89,
       "near_threshold_3": 0.00985,
-      "condition_1_met": false,
-      "condition_2_met": false,
-      "condition_3_met": false,
-      "is_buy": false,
-      "is_near_buy": false,
-      "last_buy_time": null,
-      "last_near_buy_time": null
-    },
-    {
-      "symbol": "AUD-USD",
-      "price": 0.71746,
-      "rsi_15m": 50.54,
-      "rsi_1h": 66.82,
-      "sma_100": 0.70678,
-      "sma_atr_10": 0.00483,
-      "distance": -0.01068,
-      "threshold": 0.00725,
-      "near_threshold_1": 33.33,
-      "near_threshold_2": 38.89,
-      "near_threshold_3": 0.00653,
       "condition_1_met": false,
       "condition_2_met": false,
       "condition_3_met": false,
