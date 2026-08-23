@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "timestamp": "2026-08-23T21:54:43.937148+00:00",
+  "timestamp": "2026-08-23T22:24:00.546253+00:00",
   "data": [
     {
       "symbol": "EUR-USD",
@@ -27,7 +27,7 @@
       "price": 1.3648,
       "rsi_15m": 53.15,
       "rsi_1h": 53.47,
-      "sma_100": 1.34322,
+      "sma_100": 1.34323,
       "sma_atr_10": 0.00721,
       "distance": -0.02157,
       "threshold": 0.01082,
@@ -47,9 +47,9 @@
       "price": 0.71746,
       "rsi_15m": 50.54,
       "rsi_1h": 66.82,
-      "sma_100": 0.70701,
+      "sma_100": 0.70702,
       "sma_atr_10": 0.00481,
-      "distance": -0.01046,
+      "distance": -0.01045,
       "threshold": 0.00721,
       "near_threshold_1": 33.33,
       "near_threshold_2": 38.89,
@@ -65,11 +65,11 @@
     {
       "symbol": "USD-CAD",
       "price": 1.3763,
-      "rsi_15m": 50.97,
+      "rsi_15m": 50.91,
       "rsi_1h": 47.8,
-      "sma_100": 1.39149,
+      "sma_100": 1.39148,
       "sma_atr_10": 0.00625,
-      "distance": 0.01519,
+      "distance": 0.01518,
       "threshold": 0.00937,
       "near_threshold_1": 33.33,
       "near_threshold_2": 38.89,
