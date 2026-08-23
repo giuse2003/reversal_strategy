@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "timestamp": "2026-08-23T18:32:45.878423+00:00",
+  "timestamp": "2026-08-23T19:01:21.936770+00:00",
   "data": [
     {
       "symbol": "EUR-USD",
@@ -43,17 +43,37 @@
       "last_near_buy_time": null
     },
     {
+      "symbol": "AUD-USD",
+      "price": 0.71746,
+      "rsi_15m": 50.54,
+      "rsi_1h": 66.82,
+      "sma_100": 0.70702,
+      "sma_atr_10": 0.00481,
+      "distance": -0.01044,
+      "threshold": 0.00721,
+      "near_threshold_1": 33.33,
+      "near_threshold_2": 38.89,
+      "near_threshold_3": 0.00649,
+      "condition_1_met": false,
+      "condition_2_met": false,
+      "condition_3_met": false,
+      "is_buy": false,
+      "is_near_buy": false,
+      "last_buy_time": null,
+      "last_near_buy_time": null
+    },
+    {
       "symbol": "USD-CAD",
       "price": 1.3763,
       "rsi_15m": 50.97,
       "rsi_1h": 47.8,
-      "sma_100": 1.39145,
+      "sma_100": 1.39147,
       "sma_atr_10": 0.00622,
-      "distance": 0.01515,
+      "distance": 0.01517,
       "threshold": 0.00933,
       "near_threshold_1": 33.33,
       "near_threshold_2": 38.89,
-      "near_threshold_3": 0.00839,
+      "near_threshold_3": 0.0084,
       "condition_1_met": false,
       "condition_2_met": false,
       "condition_3_met": true,
