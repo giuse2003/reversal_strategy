@@ -1,7 +1,27 @@
 {
   "status": "ok",
-  "timestamp": "2026-08-30T05:37:15.990159+00:00",
+  "timestamp": "2026-08-30T10:41:32.616177+00:00",
   "data": [
+    {
+      "symbol": "EUR-USD",
+      "price": 1.15875,
+      "rsi_15m": 37.54,
+      "rsi_1h": 24.12,
+      "sma_100": 1.15744,
+      "sma_atr_10": 0.00549,
+      "distance": -0.00131,
+      "threshold": 0.00823,
+      "near_threshold_1": 33.33,
+      "near_threshold_2": 38.89,
+      "near_threshold_3": 0.00741,
+      "condition_1_met": false,
+      "condition_2_met": true,
+      "condition_3_met": false,
+      "is_buy": false,
+      "is_near_buy": false,
+      "last_buy_time": null,
+      "last_near_buy_time": null
+    },
     {
       "symbol": "GBP-USD",
       "price": 1.35375,
@@ -45,8 +65,8 @@
     {
       "symbol": "USD-CAD",
       "price": 1.3902,
-      "rsi_15m": 56.6,
-      "rsi_1h": 70.72,
+      "rsi_15m": 56.52,
+      "rsi_1h": 70.6,
       "sma_100": 1.39149,
       "sma_atr_10": 0.00661,
       "distance": 0.00129,
