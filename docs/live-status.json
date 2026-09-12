@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "timestamp": "2026-09-12T09:12:54.414608+00:00",
+  "timestamp": "2026-09-12T12:54:13.659313+00:00",
   "data": [
     {
       "symbol": "EUR-USD",
@@ -14,26 +14,6 @@
       "near_threshold_1": 33.33,
       "near_threshold_2": 38.89,
       "near_threshold_3": 0.00683,
-      "condition_1_met": false,
-      "condition_2_met": false,
-      "condition_3_met": false,
-      "is_buy": false,
-      "is_near_buy": false,
-      "last_buy_time": null,
-      "last_near_buy_time": null
-    },
-    {
-      "symbol": "GBP-USD",
-      "price": 1.35289,
-      "rsi_15m": 58.3,
-      "rsi_1h": 55.26,
-      "sma_100": 1.34449,
-      "sma_atr_10": 0.0065,
-      "distance": -0.00839,
-      "threshold": 0.00974,
-      "near_threshold_1": 33.33,
-      "near_threshold_2": 38.89,
-      "near_threshold_3": 0.00877,
       "condition_1_met": false,
       "condition_2_met": false,
       "condition_3_met": false,
