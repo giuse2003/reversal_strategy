@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "timestamp": "2026-09-18T21:14:13.617517+00:00",
+  "timestamp": "2026-09-18T23:22:08.954167+00:00",
   "data": [
     {
       "symbol": "EUR-USD",
@@ -64,12 +64,12 @@
     },
     {
       "symbol": "USD-CAD",
-      "price": 1.3987,
-      "rsi_15m": 38.87,
-      "rsi_1h": 44.14,
+      "price": 1.3982,
+      "rsi_15m": 33.5,
+      "rsi_1h": 39.43,
       "sma_100": 1.394,
       "sma_atr_10": 0.00694,
-      "distance": -0.0047,
+      "distance": -0.0042,
       "threshold": 0.01041,
       "near_threshold_1": 33.33,
       "near_threshold_2": 38.89,
