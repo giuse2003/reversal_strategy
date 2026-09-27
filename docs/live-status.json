@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "timestamp": "2026-09-27T08:34:50.488406+00:00",
+  "timestamp": "2026-09-27T14:17:13.813887+00:00",
   "data": [
     {
       "symbol": "EUR-USD",
@@ -67,9 +67,9 @@
       "price": 1.4141,
       "rsi_15m": 45.13,
       "rsi_1h": 51.62,
-      "sma_100": 1.3967,
+      "sma_100": 1.39669,
       "sma_atr_10": 0.00666,
-      "distance": -0.0174,
+      "distance": -0.01741,
       "threshold": 0.00999,
       "near_threshold_1": 33.33,
       "near_threshold_2": 38.89,
