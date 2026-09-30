@@ -18,7 +18,7 @@ Ecco cosa fare:
 
 ## 2. Configurazione GitHub (Pages e Actions)
 
-1. Pubblica o pusha il codice su un **nuovo repository GitHub** (es. `reversal_strategy`).
+1. Pubblica o pusha il codice su un **nuovo repository GitHub** (es. `Reversal_Sgoora_Strategy`).
 2. Vai in **Settings > Secrets and variables > Actions**.
 3. Aggiungi i seguenti **New repository secret**:
    - `TELEGRAM_BOT_TOKEN`: Il token del tuo bot Telegram (creato con BotFather).

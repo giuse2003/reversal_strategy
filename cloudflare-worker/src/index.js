@@ -80,7 +80,7 @@ export default {
   async handleSegnale(chatId, env) {
     try {
       // Recupera lo status JSON da GitHub Pages
-      const response = await fetch("https://giuse2003.github.io/reversal_strategy/live-status.json?t=" + Date.now());
+      const response = await fetch("https://giuse2003.github.io/Reversal_Sgoora_Strategy/live-status.json?t=" + Date.now());
       if (!response.ok) throw new Error("File json non trovato");
       
       const json = await response.json();
@@ -102,7 +102,7 @@ export default {
         const dataAgg = new Date(json.timestamp);
         msg += `<i>Ultimo aggiornamento: ${dataAgg.toLocaleString('it-IT', { timeZone: 'Europe/Rome' })}</i>\n\n`;
       }
-      msg += `🔗 <a href="https://giuse2003.github.io/reversal_strategy/">Apri la Dashboard</a>`;
+      msg += `🔗 <a href="https://giuse2003.github.io/Reversal_Sgoora_Strategy/">Apri la Dashboard</a>`;
       
       await this.sendMessage(chatId, msg, env);
       

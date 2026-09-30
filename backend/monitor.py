@@ -141,7 +141,7 @@ def main():
                     f"RSI 1H: {res['rsi_1h']} (<= 35)\n"
                     f"Distanza SMA100: {res['distance']} >= {res['threshold']}\n\n"
                     f"Tutte le condizioni della Reversal Strategy sono soddisfatte!\n\n"
-                    f"🔗 <a href='https://giuse2003.github.io/reversal_strategy/'>Apri la Dashboard</a>"
+                    f"🔗 <a href='https://giuse2003.github.io/Reversal_Sgoora_Strategy/'>Apri la Dashboard</a>"
                 )
                 messages.append(msg)
                 
@@ -155,7 +155,7 @@ def main():
                     f"RSI 1H: {res['rsi_1h']} (Target <= {res['near_threshold_2']})\n"
                     f"Distanza SMA100: {res['distance']} >= {res['near_threshold_3']}\n\n"
                     f"Tutte le condizioni sono al 90% dell'allineamento!\n\n"
-                    f"🔗 <a href='https://giuse2003.github.io/reversal_strategy/'>Apri la Dashboard</a>"
+                    f"🔗 <a href='https://giuse2003.github.io/Reversal_Sgoora_Strategy/'>Apri la Dashboard</a>"
                 )
                 messages.append(msg)
                 
