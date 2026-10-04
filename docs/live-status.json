@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "timestamp": "2026-10-04T17:48:35.499300+00:00",
+  "timestamp": "2026-10-04T20:30:44.748102+00:00",
   "data": [
     {
       "symbol": "EUR-USD",
@@ -53,7 +53,7 @@
       "threshold": 0.00721,
       "near_threshold_1": 33.33,
       "near_threshold_2": 38.89,
-      "near_threshold_3": 0.00648,
+      "near_threshold_3": 0.00649,
       "condition_1_met": false,
       "condition_2_met": false,
       "condition_3_met": true,
