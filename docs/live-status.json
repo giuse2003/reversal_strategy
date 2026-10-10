@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "timestamp": "2026-10-10T08:49:25.383291+00:00",
+  "timestamp": "2026-10-10T14:52:37.482877+00:00",
   "data": [
     {
       "symbol": "EUR-USD",
@@ -27,13 +27,13 @@
       "price": 1.32331,
       "rsi_15m": 46.81,
       "rsi_1h": 51.64,
-      "sma_100": 1.34047,
-      "sma_atr_10": 0.00713,
-      "distance": 0.01716,
-      "threshold": 0.01069,
+      "sma_100": 1.34022,
+      "sma_atr_10": 0.00708,
+      "distance": 0.01691,
+      "threshold": 0.01063,
       "near_threshold_1": 33.33,
       "near_threshold_2": 38.89,
-      "near_threshold_3": 0.00962,
+      "near_threshold_3": 0.00956,
       "condition_1_met": false,
       "condition_2_met": false,
       "condition_3_met": true,
