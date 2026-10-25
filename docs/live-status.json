@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "timestamp": "2026-10-24T21:56:38.256666+00:00",
+  "timestamp": "2026-10-25T00:11:24.981626+00:00",
   "data": [
     {
       "symbol": "EUR-USD",
@@ -54,6 +54,26 @@
       "near_threshold_1": 33.33,
       "near_threshold_2": 38.89,
       "near_threshold_3": 0.00685,
+      "condition_1_met": false,
+      "condition_2_met": false,
+      "condition_3_met": false,
+      "is_buy": false,
+      "is_near_buy": false,
+      "last_buy_time": null,
+      "last_near_buy_time": null
+    },
+    {
+      "symbol": "USD-CAD",
+      "price": 1.4002,
+      "rsi_15m": 50.98,
+      "rsi_1h": 48.48,
+      "sma_100": 1.40441,
+      "sma_atr_10": 0.00694,
+      "distance": 0.00421,
+      "threshold": 0.01041,
+      "near_threshold_1": 33.33,
+      "near_threshold_2": 38.89,
+      "near_threshold_3": 0.00937,
       "condition_1_met": false,
       "condition_2_met": false,
       "condition_3_met": false,
