@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "timestamp": "2026-11-01T14:07:28.102470+00:00",
+  "timestamp": "2026-11-01T18:54:45.698621+00:00",
   "data": [
     {
       "symbol": "EUR-USD",
@@ -26,7 +26,7 @@
       "symbol": "GBP-USD",
       "price": 1.33894,
       "rsi_15m": 42.74,
-      "rsi_1h": 50.46,
+      "rsi_1h": 50.47,
       "sma_100": 1.33884,
       "sma_atr_10": 0.00759,
       "distance": -0.0001,
@@ -43,29 +43,9 @@
       "last_near_buy_time": null
     },
     {
-      "symbol": "AUD-USD",
-      "price": 0.70353,
-      "rsi_15m": 52.54,
-      "rsi_1h": 50.58,
-      "sma_100": 0.70331,
-      "sma_atr_10": 0.00489,
-      "distance": -0.00022,
-      "threshold": 0.00734,
-      "near_threshold_1": 33.33,
-      "near_threshold_2": 38.89,
-      "near_threshold_3": 0.0066,
-      "condition_1_met": false,
-      "condition_2_met": false,
-      "condition_3_met": false,
-      "is_buy": false,
-      "is_near_buy": false,
-      "last_buy_time": null,
-      "last_near_buy_time": null
-    },
-    {
       "symbol": "USD-CAD",
       "price": 1.3973,
-      "rsi_15m": 60.52,
+      "rsi_15m": 60.53,
       "rsi_1h": 52.55,
       "sma_100": 1.40463,
       "sma_atr_10": 0.00687,
